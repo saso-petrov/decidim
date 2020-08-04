@@ -5,6 +5,7 @@ module Decidim
     # This cell renders the Budgets component header
     class BudgetsHeaderCell < BaseCell
       delegate :highlighted, :voted, to: :current_workflow
+      delegate :voting_open?, to: :parent_controller
 
       def title
         translated_attribute(current_settings.title).presence || translated_attribute(settings.title)

@@ -148,6 +148,11 @@ en:
           category: Category
           scope: Scope
           search: Search
+          status: Status
+          status_values:
+            all: All
+            not_selected: Not selected
+            selected: Selected
         filters_small_view:
           close_modal: Close modal
           filter: Filter
@@ -167,6 +172,7 @@ en:
           lowest_cost: Lowest cost
           most_voted: Most voted
           random: Random order
+          selected: Selected
         project:
           add: Add project %{resource_name} to your vote
           count:
@@ -184,6 +190,7 @@ en:
           add_descriptive: Add project %{resource_name} to your vote
           added: Added to your vote
           added_descriptive: Project %{resource_name} added to your vote
+        selected_projects_for: Selected projects for %{name}
         show:
           budget: Budget
           view_all_projects: View all projects
@@ -227,7 +234,11 @@ en:
             more_information: More information
             show_votes: Show votes
             title: Title
-            votes_enabled: Voting enabled
+            votes: Voting
+            votes_choices:
+              disabled: Voting disabled
+              enabled: Voting enabled
+              finished: Voting finished
     events:
       budgets:
         budget_published:

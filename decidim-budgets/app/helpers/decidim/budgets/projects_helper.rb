@@ -37,6 +37,11 @@ module Decidim
         current_order&.can_checkout?
       end
 
+      # Return true if the user has voted the project
+      def voted_for?(project)
+        current_order && current_order.projects.include?(project)
+      end
+
       def projects_base_url
         URI.parse(root_url).tap { |uri| uri.query = uri.fragment = nil } .to_s
       end
